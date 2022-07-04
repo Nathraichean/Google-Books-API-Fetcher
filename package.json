@@ -1,0 +1,22 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Init project for the modis fullstack react academy",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nathraichean/fsreact-modis-project.git"
+  },
+  "author": "Svetozar Blazhev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nathraichean/fsreact-modis-project/issues"
+  },
+  "homepage": "https://github.com/Nathraichean/fsreact-modis-project#readme",
+  "devDependencies": {
+  }
+}
