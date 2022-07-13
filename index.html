@@ -5,25 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Google Books Indexer</title>
-    <script type="text/javascript" src="bookSearcher.js">
-    </script>
-
+    <script type="text/javascript" src="bookSearcher.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
 </head>
 
-<body>
+<body style="background-image: url('img/background.jpg');">
     <div id="searchFlexDiv">
-        <form action="javascript:getBooksResults()">
+        <form action="javascript:getBooks()">
             <h1>What books are you looking for?<br></h1>
-            <!-- <input id="bookSearchInput" type="text" placeholder="Enter book title or topic..."> -->
-            <input id="booksSearchButton" type="submit" value="Search"><br><br>
+            <p>This small app fetches books from <a href="https://developers.google.com/books">Google's books API</a> and shows the results below.</p>
+            <input id="bookSearchInput" type="text" placeholder="Enter book title or topic...">
+            <input id="booksSearchButton" type="button" onclick="getBooks()" value="Search"><br><br>
         </form>
     </div>
 
     <div id="booksFlexDiv">
+        <!-- Fills with books -->
+    </div>
 
-
+    <div id="footer" class="footer">
+        <h2>Created by Svetozar Blazhev. Flexbox/Fetch/API/JSON handling exercise.<br></h2>
+        <a href="https://www.github.com/Nathraichean">www.github.com/Nathraichean</a>
     </div>
 </body>
 
